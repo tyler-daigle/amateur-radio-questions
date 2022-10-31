@@ -9,13 +9,35 @@ interface Question {
   group: string;
 }
 
-function parseText(questionText: string) {
-  const questions = questionText.split("~~");
-  console.log(questions.length);
-  // console.log(questions[0]);
-  questions[1].split("\r\n").forEach(line => {
-    console.log("line: ", line.length, line.trim());
-  })
+
+// parseText() 
+// parse the text string into individual questions.
+/*
+
+The question file must follow the correct format: 
+
+~~
+T0C10 (A)
+Why is duty cycle one of the factors used to determine safe RF radiation exposure levels?
+A. It affects the average exposure to radiation
+B. It affects the peak exposure to radiation
+C. It takes into account the antenna feed line loss
+D. It takes into account the thermal effects of the final amplifier
+~~
+
+- Each question must be seperated by ~~
+- A ~~ seperator is not needed (or allowed) before the first question and after the last
+- The question and the choices must each be on a single line with no breaks.
+
+*/
+function parseText(questionText: string): Question[] {
+  const questions = questionText.split("\n~~\n");
+  
+  console.log(`Found ${questions.length} questions.`);  
+  questions[410].split("\n").forEach(line => {
+    console.log(line.trim());
+  });
+  return [];
 }
 
 function readText(fileName: string): Promise<string> {
