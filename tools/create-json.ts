@@ -32,15 +32,14 @@ D. It takes into account the thermal effects of the final amplifier
 */
 function parseText(questionText: string): Question[] {
   const questions = questionText.split("\n~~\n");
-  const questionList: Question[] = [];
-  console.log(`Found ${questions.length} questions.`);  
+  const questionList: Question[] = [];  
   
   questions.forEach(question => {
     const q = createQuestion(question);
     if(q) {
       questionList.push(q);
     } else {
-      console.log(`Failed to add question ${question.substring(0,5)}`);
+      throw new Error(`Failed to add question ${question.substring(0,5)}`);
     }
   });
   return questionList;
@@ -121,14 +120,16 @@ function readText(fileName: string): Promise<string> {
 }
 
 async function main() {
-  if (process.argv.length !== 4) {
-    console.log("Usage: node create-json.js <question-text-file> <question-output-json>");
+  if (process.argv.length !== 3) {
+    console.log("Usage: node create-json.js <question-text-file>");
     return;
   }
   const fileData = await readText(process.argv[2]);
 
   const questions = parseText(fileData);
-  console.log(questions[0]);
+  
+  // dump the json
+  console.log(JSON.stringify(questions));
 }
 main();
 
