@@ -13,8 +13,7 @@ C. The FCC
 D. All these choices are correct
 ~~
 T1A03 (B) [97.119(b)(2)]
-What do the FCC rules state regarding the use of a phonetic alphabet for station identification in the Amateur
-Radio Service?
+What do the FCC rules state regarding the use of a phonetic alphabet for station identification in the Amateur Radio Service?
 A. It is required when transmitting emergency messages
 B. It is encouraged
 C. It is required when in contact with foreign stations
@@ -1933,8 +1932,7 @@ D. Switch the transmitter to a narrow-band mode
 ~~
 T7B06 (A)
 Which of the following actions should you take if a neighbor tells you that your station’s transmissions are interfering with their radio or TV reception?
-A. Make sure that your station is functioning properly and that it does not cause interference to your own radio
-or television when it is tuned to the same channel
+A. Make sure that your station is functioning properly and that it does not cause interference to your own radio or television when it is tuned to the same channel
 B. Immediately turn off your transmitter and contact the nearest FCC office for assistance
 C. Install a harmonic doubler on the output of your transmitter and tune it until the interference is eliminated
 D. All these choices are correct

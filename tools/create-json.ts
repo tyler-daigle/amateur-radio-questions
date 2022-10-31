@@ -5,7 +5,7 @@ interface Question {
   text: string;
   choices: string[];
   answer: number;
-  subElement: string;
+  subelement: string;
   group: string;
 }
 
@@ -32,12 +32,81 @@ D. It takes into account the thermal effects of the final amplifier
 */
 function parseText(questionText: string): Question[] {
   const questions = questionText.split("\n~~\n");
-  
+  const questionList: Question[] = [];
   console.log(`Found ${questions.length} questions.`);  
-  questions[410].split("\n").forEach(line => {
-    console.log(line.trim());
+  
+  questions.forEach(question => {
+    const q = createQuestion(question);
+    if(q) {
+      questionList.push(q);
+    } else {
+      console.log(`Failed to add question ${question.substring(0,5)}`);
+    }
   });
-  return [];
+  return questionList;
+}
+
+// questionText is the whole question and it needs to be split up by newlines
+// and then inserted into the object.
+function createQuestion(questionBlob: string): Question | undefined {
+  const numRequiredLines = 6; // every question should have 6 lines, otherwise there is an error in the file
+  const lines = questionBlob.split("\n");
+  if(lines.length !== numRequiredLines) {
+    return undefined;
+  }
+
+  // the question id is the first 5 characters on line 0
+  const questionId = lines[0].substring(0,5);
+
+  // the subelement is the first 2 characters (such as T1)
+  // the group is the first 3 characters (such as T1A)
+  const subelement = lines[0].substring(0,2);
+  const group = lines[0].substring(0,3);
+
+  // the correct answer is located between the () on the first line
+  const answerLocation = lines[0].indexOf("(") + 1; //space after the first (
+
+  // the correct answer should be a number - the correct index in the choices array
+  // so convert the letter to a number
+  let correctAnswer: number;
+
+  switch(lines[0].substring(answerLocation, answerLocation + 1)) {
+    case "A":
+      correctAnswer = 0;
+      break;
+    case "B":
+      correctAnswer = 1;
+      break;
+    case "C":
+      correctAnswer = 2;
+      break;
+    case "D":
+      correctAnswer = 3;
+      break;
+    default:
+      return undefined; // something is wrong if we get here
+  }  
+
+  // line 1 contains the question text
+  const questionText = lines[1];
+
+  // the final 4 lines are the choices - they will be added to an array without the line identifiers A,B,C,D 
+  // so we ignore the first 3 characters
+  const choices = [];
+  for(let i = 2; i < lines.length; i++) {
+    choices.push(lines[i].substring(3));
+  }
+
+  const questionObj: Question = {
+    id: questionId,
+    text: questionText,
+    choices: choices,
+    answer: correctAnswer,
+    subelement,
+    group
+  };
+  
+  return questionObj;
 }
 
 function readText(fileName: string): Promise<string> {
@@ -58,7 +127,8 @@ async function main() {
   }
   const fileData = await readText(process.argv[2]);
 
-  parseText(fileData);
+  const questions = parseText(fileData);
+  console.log(questions[0]);
 }
 main();
 
