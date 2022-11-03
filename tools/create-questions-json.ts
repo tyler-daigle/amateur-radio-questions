@@ -1,3 +1,8 @@
+// create-questions-json
+// This script will read in the questions from the text file (they must follow the format below)
+// and convert it to JSON. The JSON data will be printed to the console so you can just redirect
+// it into a file.
+
 import fs from "fs";
 
 interface Question {
