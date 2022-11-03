@@ -1,3 +1,11 @@
+// create-groups-json.ts
+// This script converts the text for the groups data into JSON
+//
+// The format of the text file must be:
+// GROUPID|Description text
+//
+// | is used as the delimeter.
+
 import {readText} from "./utils";
 
 interface Group {
