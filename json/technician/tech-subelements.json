@@ -1,0 +1,127 @@
+[
+  {
+    "subelementId": "T1",
+    "name": "COMMISSION'S RULES",
+    "numExamQuestions": 6,
+    "numGroups": 6,
+    "numTotalQuestions": 67,
+    "groups": [
+      "T1A",
+      "T1B",
+      "T1C",
+      "T1D",
+      "T1E",
+      "T1F"
+    ]
+  },
+  {
+    "subelementId": "T2",
+    "name": "OPERATING PROCEDURES",
+    "numExamQuestions": 3,
+    "numGroups": 3,
+    "numTotalQuestions": 36,
+    "groups": [
+      "T2A",
+      "T2B",
+      "T2C"
+    ]
+  },
+  {
+    "subelementId": "T3",
+    "name": "RADIO WAVE PROPAGATION",
+    "numExamQuestions": 3,
+    "numGroups": 3,
+    "numTotalQuestions": 34,
+    "groups": [
+      "T3A",
+      "T3B",
+      "T3C"
+    ]
+  },
+  {
+    "subelementId": "T4",
+    "name": "AMATEUR RADIO PRACTICES",
+    "numExamQuestions": 2,
+    "numGroups": 2,
+    "numTotalQuestions": 24,
+    "groups": [
+      "T4A",
+      "T4B"
+    ]
+  },
+  {
+    "subelementId": "T5",
+    "name": "ELECTRICAL PRINCIPLES",
+    "numExamQuestions": 4,
+    "numGroups": 4,
+    "numTotalQuestions": 52,
+    "groups": [
+      "T5A",
+      "T5B",
+      "T5C",
+      "T5D"
+    ]
+  },
+  {
+    "subelementId": "T6",
+    "name": "ELECTRONIC AND ELECTRICAL COMPONENTS",
+    "numExamQuestions": 4,
+    "numGroups": 4,
+    "numTotalQuestions": 47,
+    "groups": [
+      "T6A",
+      "T6B",
+      "T6C",
+      "T6D"
+    ]
+  },
+  {
+    "subelementId": "T7",
+    "name": "PRACTICAL CIRCUITS",
+    "numExamQuestions": 4,
+    "numGroups": 4,
+    "numTotalQuestions": 44,
+    "groups": [
+      "T7A",
+      "T7B",
+      "T7C",
+      "T7D"
+    ]
+  },
+  {
+    "subelementId": "T8",
+    "name": "SIGNALS AND EMISSIONS",
+    "numExamQuestions": 4,
+    "numGroups": 4,
+    "numTotalQuestions": 48,
+    "groups": [
+      "T8A",
+      "T8B",
+      "T8C",
+      "T8D"
+    ]
+  },
+  {
+    "subelementId": "T9",
+    "name": "ANTENNAS AND FEED LINES",
+    "numExamQuestions": 2,
+    "numGroups": 2,
+    "numTotalQuestions": 24,
+    "groups": [
+      "T9A",
+      "T9B"
+    ]
+  },
+  {
+    "subelementId": "T0",
+    "name": "SAFETY",
+    "numExamQuestions": 3,
+    "numGroups": 3,
+    "numTotalQuestions": 36,
+    "groups": [
+      "T0A",
+      "T0B",
+      "T0C"
+    ]
+  }
+]

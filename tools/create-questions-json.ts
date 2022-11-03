@@ -3,7 +3,7 @@
 // and convert it to JSON. The JSON data will be printed to the console so you can just redirect
 // it into a file.
 
-import fs from "fs";
+import {readText} from "./utils";
 
 interface Question {
   id: string;
@@ -113,16 +113,6 @@ function createQuestion(questionBlob: string): Question | undefined {
   return questionObj;
 }
 
-function readText(fileName: string): Promise<string> {
-  return new Promise((resolve, reject) => {
-    fs.readFile(fileName, "utf-8", (err, data) => {
-      if (err) {
-        reject(err.message);
-      }
-      resolve(data);
-    });
-  });
-}
 
 async function main() {
   if (process.argv.length !== 3) {
