@@ -1,0 +1,142 @@
+[
+  {
+    "subelementId": "E1",
+    "name": "COMMISSION RULES",
+    "numExamQuestions": 6,
+    "numGroups": 6,
+    "numTotalQuestions": 75,
+    "groups": [
+      "E1A",
+      "E1B",
+      "E1C",
+      "E1D",
+      "E1E",
+      "E1F"
+    ]
+  },
+  {
+    "subelementId": "E2",
+    "name": "OPERATING PROCEDURES",
+    "numExamQuestions": 5,
+    "numGroups": 5,
+    "numTotalQuestions": 61,
+    "groups": [
+      "E2A",
+      "E2B",
+      "E2C",
+      "E2D",
+      "E2E"
+    ]
+  },
+  {
+    "subelementId": "E3",
+    "name": "RADIO WAVE PROPAGATION",
+    "numExamQuestions": 3,
+    "numGroups": 3,
+    "numTotalQuestions": 40,
+    "groups": [
+      "E3A",
+      "E3B",
+      "E3C"
+    ]
+  },
+  {
+    "subelementId": "E4",
+    "name": "AMATEUR PRACTICES",
+    "numExamQuestions": 5,
+    "numGroups": 5,
+    "numTotalQuestions": 60,
+    "groups": [
+      "E4A",
+      "E4B",
+      "E4C",
+      "E4D",
+      "E4E"
+    ]
+  },
+  {
+    "subelementId": "E5",
+    "name": "ELECTRICAL PRINCIPLES",
+    "numExamQuestions": 4,
+    "numGroups": 4,
+    "numTotalQuestions": 55,
+    "groups": [
+      "E5A",
+      "E5B",
+      "E5C",
+      "E5D"
+    ]
+  },
+  {
+    "subelementId": "E6",
+    "name": "CIRCUIT COMPONENTS",
+    "numExamQuestions": 6,
+    "numGroups": 6,
+    "numTotalQuestions": 70,
+    "groups": [
+      "E6A",
+      "E6B",
+      "E6C",
+      "E6D",
+      "E6E",
+      "E6F"
+    ]
+  },
+  {
+    "subelementId": "E7",
+    "name": "PRACTICAL CIRCUITS",
+    "numExamQuestions": 8,
+    "numGroups": 8,
+    "numTotalQuestions": 108,
+    "groups": [
+      "E7A",
+      "E7B",
+      "E7C",
+      "E7D",
+      "E7E",
+      "E7F",
+      "E7G",
+      "E7H"
+    ]
+  },
+  {
+    "subelementId": "E8",
+    "name": "SIGNALS AND EMISSIONS",
+    "numExamQuestions": 4,
+    "numGroups": 4,
+    "numTotalQuestions": 45,
+    "groups": [
+      "E8A",
+      "E8B",
+      "E8C",
+      "E8D"
+    ]
+  },
+  {
+    "subelementId": "E9",
+    "name": "ANTENNAS AND TRANSMISSION LINES",
+    "numExamQuestions": 8,
+    "numGroups": 8,
+    "numTotalQuestions": 96,
+    "groups": [
+      "E9A",
+      "E9B",
+      "E9C",
+      "E9D",
+      "E9E",
+      "E9F",
+      "E9G",
+      "E9H"
+    ]
+  },
+  {
+    "subelementId": "E0",
+    "name": "SAFETY",
+    "numExamQuestions": 1,
+    "numGroups": 1,
+    "numTotalQuestions": 11,
+    "groups": [
+      "E0A"
+    ]
+  }
+]
